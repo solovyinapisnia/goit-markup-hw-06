@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="navigation">
           <a class="logo" href="./index.html"
             >Web<span class="logo-accent">Studio</span></a
@@ -37,6 +37,12 @@
           </ul>
         </nav>
 
+        <button class="mobile-open-btm" type="button">
+          <svg class="mobile-open-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <address class="address">
           <ul class="address-list">
             <li>
@@ -51,16 +57,16 @@
         </address>
       </div>
     </header>
-    <main>
-      <!-- Секція 1 із заголовком -->
-      <section class="banner-section">
+    <!-- <main> -->
+    <!-- Секція 1 із заголовком -->
+    <!-- <section class="banner-section">
         <div class="container">
           <h1 class="banner-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
       <!-- Секція 2 із латентним заголовком 2р -->
-      <section class="features-section">
+    <!-- <section class="features-section">
         <div class="container">
           <h2 class="visually-hidden">
             Nikomu ne potribnyi zagolovok, iakyi nide ne napysanyi u zavdanni,
@@ -134,9 +140,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Секція 3 з мордочками -->
-      <section class="team-section">
+      </section> -->
+    <!-- Секція 3 з мордочками -->
+    <!-- <section class="team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
 
@@ -374,9 +380,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Секція 4 з портфоліо -->
-      <section class="portfolio-section">
+      </section> -->
+    <!-- Секція 4 з портфоліо -->
+    <!-- <section class="portfolio-section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
 
@@ -502,13 +508,14 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- ##### Фуууууууууутер ##### -->
-    <footer class="footer">
+
+    <!-- <footer class="footer">
       <div class="container">
         <!-- ##### Логотип ##### -->
-        <div class="footer-slogan">
+    <!-- <div class="footer-slogan">
           <a class="logo" href="./index.html"
             >Web<span class="logo-accent">Studio</span></a
           >
@@ -588,11 +595,11 @@
             </button>
           </form>
         </div>
-      </div>
-    </footer>
+      </div> -->
+    <!-- </footer> -->
 
-    <!-- !!!!!!!!!!!модалочка!!!!!!!!!!!!!! -->
-    <div class="backdrop is-open">
+    <!-- !!!!!!!!!!! модалочка!!!!!!!!!!!!!! -->
+    <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -694,6 +701,100 @@
           </div>
           <button class="button" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+
+    <!-- !!!!!!!!!!!!!!!!!!!! мобільне меню !!!!!!!!!!!!!!!!!!!! -->
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg
+            class="mobile-menu-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="mobile menu close button">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu-content">
+          <nav>
+            <ul class="mobile-menu-navigation-list">
+              <li class="navigation-list-item">
+                <a class="link active" href="./index.html">Studio</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="link" href="">Portfolio</a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu-footer">
+            <address class="mobile-menu-address">
+              <ul class="address-list">
+                <li>
+                  <a class="link active" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a class="link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="mobile-menu-social-list">
+              <li class="mobile-menu-social-list-item">
+                <a class="elipse" href="#">
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    aria-label="instagram logotype">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-list-item">
+                <a class="elipse" href="#">
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    aria-label="twitter logotype">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-list-item">
+                <a class="elipse" href="#">
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    aria-label="facebook logotype">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-list-item">
+                <a class="elipse" href="#">
+                  <svg
+                    class="icon"
+                    width="24"
+                    height="24"
+                    aria-label="linkedin logotype">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>

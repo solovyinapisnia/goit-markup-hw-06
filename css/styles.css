@@ -119,7 +119,7 @@ button {
   display: flex;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
+  background-color: var(--IRIS);
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -131,7 +131,7 @@ button {
 
 .elipse:hover,
 .elipse:focus {
-  background-color: #404bbf;
+  background-color: var(--OCEAN);
 }
 /* =============== FIRST SECTION STYLES  =============== */
 .banner-section {
@@ -147,6 +147,18 @@ button {
   max-width: 1440px;
   padding: 72px 0;
   margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .banner-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
+  }
 }
 
 .banner-title {
@@ -190,7 +202,7 @@ button {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  line-height: 1.11em;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -247,6 +259,207 @@ button {
 }
 
 /* =============== / SECOND SECTION STYLES  =============== */
+
+/* =============== THIRD SECTION STYLES =============== */
+
+.team-section {
+  background-color: #f4f4fd;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.team-cards {
+  display: flex;
+  row-gap: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  max-width: 264px;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card-content {
+  padding: 32px 0;
+}
+
+.team-cards .card-content {
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.team-cards .card-title {
+  margin-bottom: 8px;
+}
+
+.team-cards .text {
+  margin-bottom: 8px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+/* =============== / THIRD SECTION STYLES =============== */
+
+/* =============== FOURTH SECTION STYLES =============== */
+
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.portfolio-cards .card-content {
+  border: 1px solid var(--CORNFLOWER);
+  position: relative;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.portfolio-card {
+  flex-basis: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-title {
+  margin-bottom: 8px;
+}
+.portfolio-card-overlay-text {
+  display: none;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
+}
+/* =============== / FOURTH SECTION STYLES =============== */
+
+/* =============== FOOTER STYLES =============== */
+
+.footer {
+  color: #f4f4fd;
+  background-color: #2e2f42;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.footer .container {
+  display: flex;
+  /* align-items: baseline; */
+  align-items: center;
+  flex-direction: column;
+  row-gap: 72px;
+}
+
+.footer-slogan {
+  margin-top: 16px;
+}
+
+.footer .logo {
+  text-align: center;
+  /* display: inline-block; */
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer .logo-accent {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  width: 264px;
+}
+
+.footer-social-title {
+  display: block;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-list-item .elipse:hover,
+.footer-social-list-item .elipse:focus {
+  background-color: #31d0aa;
+}
+
+/* .footer-subscription {
+  margin-left: 80px;
+} */
+
+.footer-subscription-form {
+  display: flex;
+  /* gap: 24px; */
+  gap: 16px;
+  flex-direction: column;
+}
+
+.footer-subscription-form-field {
+  /* color: #ffffff; */
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  /* width: 264px; */
+  width: 288px;
+  height: 40px;
+  border-radius: 4px;
+  /* border: 1px solid #ffffff; */
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+}
+.footer-subscription-form-field::placeholder {
+  color: #ffffff;
+}
+
+.footer-subscription-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+}
+
+.footer-subscription-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+/* =============== / FOOTER STYLES =============== */
+
+/* =============== ONLY MOBILE STYLES =============== */
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
@@ -257,7 +470,6 @@ button {
   }
 }
 
-/* =============== ONLY MOBILE STYLES =============== */
 @media screen and (max-width: 767px) {
   /* =============== HEADER STYLES =============== */
   .navigation-list {
@@ -297,7 +509,7 @@ button {
 
   .mobile-menu-container {
     position: relative;
-    height: 100%;
+    height: 100vh;
   }
 
   .mobile-menu-close-btn {
@@ -428,7 +640,7 @@ button {
   }
 
   .navigation-list-item {
-    color: #2e2f42;
+    color: var(--NAVY-BLUE);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -445,7 +657,7 @@ button {
     content: "";
     width: 100%;
     height: 4px;
-    background-color: #404bbf;
+    background-color: var(--OCEAN);
     border-radius: 2px;
     display: block;
     position: absolute;
@@ -476,7 +688,7 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    color: #434455;
+    color: var(--SLATE);
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -516,11 +728,30 @@ button {
   .features-list-item .card-title {
     text-align: left;
   }
-
   /* =============== / SECOND SECTION STYLES =============== */
 
   /* ===============  THIRD SECTION STYLES =============== */
+  .team-cards {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
   /* =============== / THIRD SECTION STYLES =============== */
+
+  /* =============== FOURTH SECTION STYLES =============== */
+
+  .portfolio-cards {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .portfolio-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  /* =============== / FOURTH SECTION STYLES =============== */
+
+  /* =============== FOOTER STYLES =============== */
+  /* =============== / FOOTER STYLES =============== */
 } /* =============== / TABLET STYLES =============== */
 
 /* =============== LAPTOP STYLES =============== */
@@ -610,6 +841,58 @@ button {
   }
 
   /* =============== / SECOND SECTION STYLES =============== */
+
+  /* ===============  THIRD SECTION STYLES =============== */
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* =============== / THIRD SECTION STYLES =============== */
+
+  /* =============== FOURTH SECTION STYLES =============== */
+  .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-cards {
+    row-gap: 48px;
+  }
+
+  .portfolio-card {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .portfolio-card .overlay .portfolio-card-overlay-text {
+    display: block;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    padding: 40px 32px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .portfolio-card .overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-card:hover .overlay .portfolio-card-overlay-text {
+    transform: translateY(0%);
+  }
+  /* =============== / FOURTH SECTION STYLES =============== */
+
+  /* =============== FOOTER STYLES =============== */
+  /* =============== / FOOTER STYLES =============== */
 } /* =============== / LAPTOP STYLES =============== */
 
 .header {

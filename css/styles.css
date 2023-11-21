@@ -81,7 +81,10 @@ button {
 /* =============== / COMMON STYLES =============== */
 
 /* =============== / HEADER MOBILE STYLES=============== */
-
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .page-header-container {
   display: flex;
   align-items: center;
@@ -355,15 +358,12 @@ button {
 .footer {
   color: #f4f4fd;
   background-color: #2e2f42;
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .footer .container {
   display: flex;
-  /* align-items: baseline; */
   align-items: center;
   flex-direction: column;
   row-gap: 72px;
@@ -375,7 +375,6 @@ button {
 
 .footer .logo {
   text-align: center;
-  /* display: inline-block; */
   display: block;
   margin-bottom: 16px;
 }
@@ -410,35 +409,25 @@ button {
   background-color: #31d0aa;
 }
 
-/* .footer-subscription {
-  margin-left: 80px;
-} */
-
 .footer-subscription-form {
   display: flex;
-  /* gap: 24px; */
   gap: 16px;
   flex-direction: column;
 }
 
 .footer-subscription-form-field {
-  /* color: #ffffff; */
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* width: 264px; */
   width: 288px;
   height: 40px;
   border-radius: 4px;
-  /* border: 1px solid #ffffff; */
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 }
 .footer-subscription-form-field::placeholder {
   color: #ffffff;
@@ -751,6 +740,30 @@ button {
   /* =============== / FOURTH SECTION STYLES =============== */
 
   /* =============== FOOTER STYLES =============== */
+
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 24px;
+  }
+  .footer .logo {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  .footer-social-title {
+    text-align: left;
+  }
+
+  .footer-subscription-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-subscription-form-field {
+    width: 264px;
+  }
+
   /* =============== / FOOTER STYLES =============== */
 } /* =============== / TABLET STYLES =============== */
 
@@ -892,10 +905,25 @@ button {
   /* =============== / FOURTH SECTION STYLES =============== */
 
   /* =============== FOOTER STYLES =============== */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer .container {
+    column-gap: 0;
+    align-items: baseline;
+  }
+  .footer-social {
+    margin-left: 120px;
+  }
+  .footer-subscription {
+    margin-left: 80px;
+  }
+
+  .footer-subscription-form-field {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
   /* =============== / FOOTER STYLES =============== */
 } /* =============== / LAPTOP STYLES =============== */
-
-.header {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
